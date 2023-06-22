@@ -12,7 +12,7 @@
     <!-- Card Infographic  -->
     <section>
       <v-row>
-        <v-col>
+        <v-col cols="12" xs="12" sm="12" md="6" lg="6" xl="6">
           <v-card class="rounded-lg custom-shadow" :loading="home_loading">
             <div class="d-flex align-center justify-space-between pa-5">
               <div class="d-flex flex-column">
@@ -25,7 +25,7 @@
             </div>
           </v-card>
         </v-col>
-        <v-col>
+        <v-col cols="12" xs="12" sm="12" md="6" lg="6" xl="6">
           <v-card class="rounded-lg custom-shadow" :loading="home_loading">
             <div class="d-flex align-center justify-space-between pa-5">
               <div class="d-flex flex-column">
@@ -40,7 +40,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col>
+        <v-col cols="12" xs="12" sm="12" md="6" lg="6" xl="6">
           <v-card class="rounded-lg custom-shadow" :loading="home_loading">
             <div class="d-flex align-center justify-space-between pa-5">
               <div class="d-flex flex-column">
@@ -53,7 +53,7 @@
             </div>
           </v-card>
         </v-col>
-        <v-col>
+        <v-col cols="12" xs="12" sm="12" md="6" lg="6" xl="6" >
           <v-card class="rounded-lg custom-shadow" :loading="home_loading">
             <div class="d-flex align-center justify-space-between pa-5">
               <div class="d-flex flex-column">
