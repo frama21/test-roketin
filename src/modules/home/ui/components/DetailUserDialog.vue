@@ -72,6 +72,14 @@
                   :bold="false"
                 />
               </v-list-item>
+              <v-list-item>
+                <AppBaseLabel
+                  :text="`${formatDate(data?.registered?.date)}`"
+                  no-gutter
+                  font-size="13px"
+                  :bold="false"
+                />
+              </v-list-item>
             </v-list>
           </v-col>
         </v-row>
@@ -99,6 +107,18 @@ defineProps({
     },
   },
 });
+
+/**
+ * @description for format timestamp into readable date
+ *
+ * @return {String}
+ */
+const formatDate = date => {
+  const dateObject = new Date(date);
+
+  const options = { day: '2-digit', month: 'short', year: 'numeric' };
+  return dateObject.toLocaleDateString('en-US', options);
+};
 
 // define emit
 const emit = defineEmits(['close']);
